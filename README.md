@@ -25,7 +25,7 @@ this project is using
 - use `yarn test` to run tests
 
 ## Preview on Vercel
-- you can also checkout a deployed version on vercel [here](https://githubexplorer-two.vercel.app/?q=)
+- you can also checkout a deployed version on vercel [https://next-react-issues.vercel.app/?q=](https://next-react-issues.vercel.app/?q=)
 
 ## Improvements
 
