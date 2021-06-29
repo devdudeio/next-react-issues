@@ -1,5 +1,7 @@
 # React Issues Viewer
 
+demo: [show preview on vercel](https://next-react-issues.vercel.app/?q=)
+
 this project is using 
 - nextjs 
 - react 
