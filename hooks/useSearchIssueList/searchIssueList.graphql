@@ -1,0 +1,31 @@
+query searchIssueList($query: String! $cursor: String){
+    search(query: $query first: 10, after: $cursor type: ISSUE) {
+        edges {
+            node {
+                ...SearchIssueListIssueFragment
+            }
+        }
+        pageInfo {
+            ...SearchIssueListPageInfoFragment
+        }
+    }
+}
+
+fragment SearchIssueListPageInfoFragment on PageInfo {
+    endCursor
+    hasNextPage
+}
+
+fragment SearchIssueListIssueFragment on Issue {
+    id
+    number
+    title
+    state
+    closed
+    createdAt
+    closedAt
+    author{
+        login
+        avatarUrl
+    }
+}

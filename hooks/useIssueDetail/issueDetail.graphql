@@ -1,0 +1,48 @@
+query issueDetail($id: ID!){
+    node(id: $id){
+        ...on Issue{
+            ...IssueFragment
+            comments(first: 10){
+                pageInfo{
+                    ...CommentsPageInfoFragment
+                }
+                edges{
+                    node{
+                        ... on  IssueComment{
+                            ...IssueCommentFragment
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+fragment CommentsPageInfoFragment on PageInfo {
+    endCursor
+    hasNextPage
+}
+
+fragment IssueFragment on Issue {
+    id
+    number
+    createdAt
+    closedAt
+    closed
+    state
+    bodyHTML
+    author{
+        login
+        avatarUrl
+    }
+}
+
+fragment IssueCommentFragment on IssueComment{
+    id
+    createdAt
+    author{
+        login
+        avatarUrl
+    }
+    bodyHTML
+}

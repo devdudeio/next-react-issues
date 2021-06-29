@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppTitle should render default props 1`] = `
+<h1
+  className="text-white text3xl font-extrabold"
+>
+  missing children
+</h1>
+`;
+
+exports[`AppTitle should render with text 1`] = `
+<h1
+  className="text-white text3xl font-extrabold"
+>
+  React Issues
+</h1>
+`;
