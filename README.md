@@ -14,10 +14,10 @@ this project is using
 
 ## How to start the project
 1. install dependencies via
-`$ yarn`
+`yarn`
 2. copy `.env.local.example` to `.env.local`
 3. include your own `NEXT_PUBLIC_GITHUB_TOKEN` into `.env.local` (get one [here](https://github.com/settings/tokens) - no permissions needed)
-4. start with `yarn dev`
+4. start project with `yarn dev`
 
 ## Additional information
 
